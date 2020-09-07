@@ -5,6 +5,7 @@ import LoginForm from "./components/LoginForm";
 import FriendsList from "./components/FriendsList";
 import PrivateRoute from "./components/PrivateRoute";
 import NewFriendsForm from "./components/NewFriendsForm";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         </ul>
         <Switch>
           <Route path="/loginForm" component={LoginForm} />
+          <Route path="/pageNotFound" component={PageNotFound} />
           <PrivateRoute path="/FriendsList" component={FriendsList} />
           <PrivateRoute path="/NewFriend" component={NewFriendsForm} />
         </Switch>
