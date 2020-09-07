@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Route, Link, Switch } from "react-router-dom";
+import { Route, Link, Switch, NavLink } from "react-router-dom";
 import LoginForm from "./components/LoginForm";
 import FriendsList from "./components/FriendsList";
 import PrivateRoute from "./components/PrivateRoute";
@@ -11,17 +11,15 @@ function App() {
   return (
     <div className="App">
       <>
-        <ul>
-          <li>
-            <Link to="/loginForm">Login</Link>
-          </li>
-          <li>
-            <Link to="/FriendsList">Friends List</Link>
-          </li>
-          <li>
-            <Link to="/NewFriend">Add Friend</Link>
-          </li>
-        </ul>
+        <div>
+          <NavLink to="/loginForm">Login</NavLink>
+        </div>
+        <div>
+          <NavLink to="/FriendsList">Friends List</NavLink>
+        </div>
+        <div>
+          <NavLink to="/NewFriend">Add Friend</NavLink>
+        </div>
         <Switch>
           <Route path="/loginForm" component={LoginForm} />
           <Route path="/pageNotFound" component={PageNotFound} />

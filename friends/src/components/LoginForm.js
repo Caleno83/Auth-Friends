@@ -39,7 +39,7 @@ const LoginForm = (props) => {
   };
 
   const removeToken = () => {
-    localStorage.setItem("token", "");
+    localStorage.removeItem("token");
     console.log("Signing out now removing the token from LocalStorage");
   };
 
