@@ -15,7 +15,7 @@ function App() {
           <NavLink to="/loginForm">Login</NavLink>
         </div>
         <div>
-          <NavLink to="/FriendsList">Friends List</NavLink>
+          <NavLink to="/FriendsList">Best Friends List</NavLink>
         </div>
         <div>
           <NavLink to="/NewFriend">Add Friend</NavLink>
